@@ -13,3 +13,7 @@ create table if not exists album
     sales DOUBLE,
     genre varchar(255)
 );
+
+describe album;
+
+show create table album;
