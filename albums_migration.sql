@@ -4,7 +4,7 @@ drop table if exists albums;
 
 show tables;
 -- Just wanted to test if table would work with a mixture of upper and lowercase values
-create table if not exists album
+create table if not exists albums
 (
     id int unsigned not null auto_increment primary key ,
     artist VARCHAR(255) NOT NULL,
@@ -14,6 +14,6 @@ create table if not exists album
     genre varchar(255)
 );
 
-describe album;
+describe albums;
 
-show create table album;
+show create table albums;
