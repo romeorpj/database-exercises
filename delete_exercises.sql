@@ -2,26 +2,26 @@ USE codeup_test_db;
 
 --     Switch select statements to delete for safer delete practices
 
--- SELECT name
+-- SELECT *
 -- FROM albums
 -- WHERE release_date > 1991;
 
-DELETE name
+DELETE *
 FROM albums
 WHERE release_date > 1991;
 
--- SELECT name
+-- SELECT *
 -- FROM albums
 -- WHERE genre = 'disco';
 
-DELETE name
+DELETE *
 FROM albums
 WHERE genre = 'disco';
 
--- SELECT name
+-- SELECT *
 -- FROM albums
 -- WHERE artist = 'Whitney Houston';
 
-DELETE name
+DELETE *
 FROM albums
 WHERE artist = 'Whitney Houston';
