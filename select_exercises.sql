@@ -18,7 +18,7 @@ WHERE release_date BETWEEN 1990 and 1999;
 
 SELECT name
 FROM codeup_test_db.albums
-Where sales < 20000000;
+Where sales < 20.0;
 
 SELECT name
 FROM codeup_test_db.albums
