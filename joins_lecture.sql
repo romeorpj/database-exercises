@@ -1,0 +1,36 @@
+CREATE DATABASE IF NOT EXISTS fortran_db;
+
+USE fortran_db;
+
+
+CREATE TABLE IF NOT EXISTS teamS
+(
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    city VARCHAR(255) NOT NULL,
+    name varchar(255) NOT NULL
+    );
+
+
+
+CREATE TABLE IF NOT EXISTS players
+(
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    jersey_number INT UNSIGNED NOT NULL,
+    is_active TINYINT UNSIGNED NOT NULL,
+    team_id INT UNSIGNED NOT NULL,
+    FOREIGN KEY (team_id) REFERENCES teamS(id)
+    );
+
+
+CREATE TABLE IF NOT EXISTS positions
+(
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    position CHAR(2)
+);
+
+CREATE TABLE IF NOT EXISTS player_position(
+    player_id INT UNSIGNED NOT NULL,
+    position_id INT UNSIGNED NOT NULL
+);
